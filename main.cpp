@@ -1,4 +1,10 @@
 #include<iostream>
+#include<fstream>
+void loadData(const char* filename, int* num)
+{
+	std::ifstream fin(filename);
+	fin >> *num;
+}
 void countDown(int num)
 {
 	for (int i = num; i > 0; i--) {
@@ -8,7 +14,8 @@ void countDown(int num)
 }
 int main()
 {
-	int num = 5;
+	int num = 0;
+	loadData("data.txt", &num);
 	countDown(num);
 	system("pause>0");
 }
