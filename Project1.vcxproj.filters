@@ -3,8 +3,10 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="countDown.cpp" />
+    <ClCompile Include="loadData.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="countDown.h" />
+    <ClInclude Include="loadData.h" />
   </ItemGroup>
 </Project>
